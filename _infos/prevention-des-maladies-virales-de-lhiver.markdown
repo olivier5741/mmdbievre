@@ -1,6 +1,7 @@
 ---
 title: Prévention des maladies virales de l'hiver
 date: 2016-12-11 16:01:00 Z
+layout: article
 ---
 
 Le mois de septembre est le bon moment pour parler de la **prévention des maladies virales de l'hiver.**
