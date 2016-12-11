@@ -1,0 +1,35 @@
+---
+title: La maison médicale de Bièvre
+timezone: UTC
+collections:
+  contacts:
+    title: Contacts
+    output: true
+  infos:
+    title: Infos
+    output: true
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+  tips:
+    title: Tips
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
