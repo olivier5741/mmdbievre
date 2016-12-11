@@ -127,16 +127,12 @@
 </div>
 <section id="posts" class="posts">
 	<h1>News</h1>
-	<article>
-		<p>
-		Réseau Santé Wallon (RSW) De quoi s'agit-il ? Plus de détails dans la rubrique "Bon à savoir" <span>(07/10/2016)</span>
-		</p>
-	</article>
-	<article>
-		<p>
-		La maison médicale accueille un assistant , qu'est-ce donc? <span>(07/10/2016)</span>
-		</p>
-	</article>
+	{% for post in site.posts %}
+		<article>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		<span>{{ post.date | date: "%b %-d, %Y" }}</span>
+		</article>
+	{% endfor %}
 </section>
   	</div>
   	<section id="contacts" class="contacts">
