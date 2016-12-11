@@ -1,6 +1,7 @@
 ---
 title: Piqûres d'insectes
 date: 2016-12-11 16:06:00 Z
+layout: article
 ---
 
 Les vacances sont parfois gâchées par des **piqûres d'insectes**, ceci est particulièrement vrai dans les pays tropicaux mais parfois aussi par exemple dans le sud de la France. De plus, ces moustiques peuvent transmettre des maladies (Malaria, Zika, Dengue,etc... ). Nous vous proposons quelques conseils tirés du site de l'institut de médecine tropicale (www.itg.be) pour vous protéger de ceux-ci.
