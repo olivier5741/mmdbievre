@@ -70,19 +70,22 @@ layout: default
 </section>
 <section id="articles" class="articles">
 	<h1>Infos supp.</h1>
+	
+	{% for post in site.posts %}
+		<article>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		<span>{{ post.date | date: "%b %-d, %Y" }}</span>
+		</article>
+	{% endfor %}
+	
 	<div class="flex">
-		<article class="media">
-		<div class="bd">			
-			<span class="h2">Les moustiques</span>
-			<span>sont de retour ...</span>
-		</div>
-		</article>
-		<article class="media">
+		{% for post in site.posts %}
+			<article class="media">
 			<div class="bd">			
-				<span class="h2">Les moustiques</span>
-				<span>sont de retour ...</span>
+				<a class="h2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<span>{{ post.excerpt | strip_html | truncate: 160 }}</span>
 			</div>
-		</article>
+		{% endfor %}		
 	</div>	
 </section>
 </div>
