@@ -24,17 +24,23 @@ layout: default
 <section id="projects" class="projects">
 	<h1>Projets</h1>
 	<div class="flex">		
-		{% for project in site.projects %}
-			<article class="media">
+		<article class="media">
 			<a class="img" >
-			<img src="{{ project.image | prepend: site.baseurl }}">
+				<img src="http://simpleicon.com/wp-content/uploads/user1-64x64.png">
 			</a>
 			<div class="bd">			
-				<a class="h2" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-				<span>{{ project.excerpt | strip_html | truncate: 160 }}</span>
+				<span class="h2">Suivi diabétique</span>
+				<span>Dans le cadre du projet ...</span>
 			</div>
-			</article>
-		{% endfor %}	
+		</article>
+		<article class="media">
+			<a class="img" >
+				<img src="http://simpleicon.com/wp-content/uploads/user1-64x64.png">
+			</a>
+			<div class="bd">			
+				<span class="h2">Suivi diabétique</span>
+			</div>
+		</article>
 	</div>
 </section>
 <section id="articles" class="articles">
