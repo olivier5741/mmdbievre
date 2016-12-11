@@ -10,6 +10,11 @@
     <div class="page-content">
       <div class="wrapper">
         <h1>{{ title }}</h1>
+        
+        {% if image %}
+        <img src="{{ image | prepend: site.baseurl }}" />
+        {% endif %}
+        
         {{ content }}
       </div>
     </div>
