@@ -17,5 +17,3 @@ Documents à destination du médecin:
 * [document descriptif projet](https://dochub.com/michelwouters/1zLLwQ/lettre-medecin-introduction-projet-obesite)
 
 * [fiche d'inscription](https://dochub.com/michelwouters/3zoozR/fiche-d-entree-projet-vierge-version-courte-doc) à compléter par le médecin traitant
-
-* [un document  ](http://rokiwi.github.io)à complèter
