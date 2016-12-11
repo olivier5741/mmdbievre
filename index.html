@@ -44,7 +44,7 @@ layout: default
 	<h1>Infos supp.</h1>	
 	<div class="flex">
 		{% for post in site.infos %}
-			<article class="media">
+			<article style="max-width:400px" class="media">
 			<div class="bd">			
 				<a class="h2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 				<span>{{ post.excerpt | strip_html | truncate: 160 }}</span>
