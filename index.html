@@ -27,7 +27,7 @@ layout: default
 		{% for project in site.projects %}
 			<article class="media">
 			<a class="img" >
-			<img src="{{ project.image | prepend: site.baseurl }}">
+			<img src="{{ project.image | prepend: site.baseurl }}" />
 			</a>
 			<div class="bd">			
 				<a class="h2" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
