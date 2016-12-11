@@ -12,12 +12,15 @@ layout: default
 		<span style="display: block" >7 rue de la Wiaule</span>
 		<span style="display: block" >5555 Bièvre</span>
 		</p>
-		<h3>
+		</h3>
 	</a>
 	<h2>Bon à savoir</h2>
 	<ul>
-		<li>Petit un</li>
-		<li>Petit deux</li>
+		{% for tip in site.tips %}
+		<li>
+		<a class="post-link" href="{{ tip.url | prepend: site.baseurl }}">{{ tip.title }}</a>
+		</li>
+		{% endfor %}
 	</ul>
 </section>
 <div>
