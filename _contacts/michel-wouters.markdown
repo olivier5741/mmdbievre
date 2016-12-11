@@ -6,5 +6,6 @@ categories:
 Firstname: Michel
 Lastname: Wouters
 Phone: 061/53.49.29
+layout: default
 ---
 
