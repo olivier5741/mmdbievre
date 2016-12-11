@@ -1,8 +1,70 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="main flex">
+  <head>
+<title>MMD</title>
+<style type="text/css">
+  h1 { font-size: 3em }
+  h2 { font-size: 2em }
+  .h2 { font-size: 2em }
+  ul.top-nav {
+      list-style-type: none;
+  }
+  ul.top-nav > li {
+    vertical-align: top; 
+      font-size: 1.5em;
+  }
+  .media {margin:10px;}
+  .media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+  .media .img {float:left; margin-right: 10px;}
+  .media .img img{display:block;}
+  .media .bd span {display: block;}
+  .flex {
+      display: flex;
+      flex-wrap: wrap;  
+      justify-content: space-between;  		
+  }
+  .flex > section, .flex > article, .flex > li {
+    margin: 10px;
+  }
+  .posts {
+    max-width: 300px
+  }
+</style>
+</head>
+
+
+  <body>
+
+    <ul class="top-nav flex" style="justify-content: center;">
+	<li>
+		<a href="#contacts">Prestataires</a>
+	</li>
+	<li>
+		<a href="#projects">Projects</a>
+	</li>
+	<li>
+		<a href="#posts">News</a>
+	</li>
+	<li>
+		<a href="#articles">Infos supp.</a>
+	</li>
+	<li>
+		<a href="#duty">Garde</a>
+		<span style="display: block;color: red; text-align: right;" >1733</span>
+	</li>
+	<li>
+		<a href="#links">Liens</a>
+	</li>
+	<li>
+		<a href="#about">À propos</a>
+	</li>
+</ul>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="main flex">
 <section id="info" class="info">
 	<h1>061/86.01.36</h1>
 	<a href="https://goo.gl/maps/WeLhZ2xRBkp">
@@ -24,41 +86,61 @@ layout: default
 <section id="projects" class="projects">
 	<h1>Projets</h1>
 	<div class="flex">
-		{% for project in site.projects %}
+		
 			<article class="media">
 			<a class="img" >
-			<img src="{{ project.image | prepend: site.baseurl }}">
+			<img src="">
 			</a>
 			<div class="bd">			
-				<a class="h2" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-				<span>{{ project.excerpt | strip_html | truncate: 160 }}</span>
+				<a class="h2" href="/projects/suivi-diabetique/">Suivi diabétique</a>
+				<span>
+</span>
 			</div>
 			</article>
-		{% endfor %}	
+			
 	</div>
 </section>
 <section id="articles" class="articles">
 	<h1>Infos supp.</h1>	
 	<div class="flex">
-		{% for post in site.infos %}
+		
 			<article class="media">
 			<div class="bd">			
-				<a class="h2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				<span>{{ post.excerpt | strip_html | truncate: 160 }}</span>
+				<a class="h2" href="/infos/les-moustiques/">Les moustiques</a>
+				<span>sont de retour
+</span>
 			</div>
 			</article>
-		{% endfor %}		
+		
+			<article class="media">
+			<div class="bd">			
+				<a class="h2" href="/infos/les-moustiques-2/">Les moustiques (2)</a>
+				<span>sont encore de retour
+</span>
+			</div>
+			</article>
+				
 	</div>	
 </section>
 </div>
 <section id="posts" class="posts">
 	<h1>News</h1>
-	{% for post in site.posts %}
+	
 		<article>
-		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-		<span>{{ post.date | date: "%b %-d, %Y" }}</span>
+		<a class="post-link" href="/posts/une-nouvelle-news/">Une nouvelle news</a>
+		<span>Dec 11, 2016</span>
 		</article>
-	{% endfor %}
+	
+		<article>
+		<a class="post-link" href="/posts/nouvel-assistant/">Nouvel assistant</a>
+		<span>Dec 11, 2016</span>
+		</article>
+	
+		<article>
+		<a class="post-link" href="/posts/reseau-sante-wallon/">Réseau Santé Wallon</a>
+		<span>Dec 11, 2016</span>
+		</article>
+	
 </section>
   	</div>
   	<section id="contacts" class="contacts">
@@ -134,3 +216,13 @@ layout: default
 
 <a href="https://icons8.com">Icon pack by Icons8</a>
 </div>
+
+      </div>
+    </div>
+
+    
+
+
+  </body>
+
+</html>
