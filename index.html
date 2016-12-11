@@ -71,15 +71,8 @@ layout: default
 <section id="articles" class="articles">
 	<h1>Infos supp.</h1>
 	
-	{% for post in site.posts %}
-		<article>
-		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-		<span>{{ post.date | date: "%b %-d, %Y" }}</span>
-		</article>
-	{% endfor %}
-	
 	<div class="flex">
-		{% for post in site.posts %}
+		{% for post in site.infos %}
 			<article class="media">
 			<div class="bd">			
 				<a class="h2" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
