@@ -5,4 +5,4 @@ image: "/uploads/P1030470.JPG"
 layout: article
 ---
 
-Nous prenons en charge les patients en surpoid
+Nous prenons en charge les patients en surpoid 
